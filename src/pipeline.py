@@ -1,21 +1,13 @@
-from pathlib import Path
+from src.pdf_engine import PDFEngine
+
 
 def run_pipeline(pdf_path):
 
-    print("="*60)
-    print("AI PDF to DXF Converter")
-    print("="*60)
+    engine = PDFEngine()
 
-    pdf_path = Path(pdf_path)
+    pages = engine.page_count(pdf_path)
 
-    if not pdf_path.exists():
-
-        print("Input file not found")
-
-        return
-
-    print(f"Input : {pdf_path}")
-
-    print("Pipeline Started")
-
-    print("Finish")
+    print("=" * 50)
+    print("AI PDF to DXF")
+    print("=" * 50)
+    print(f"Pages : {pages}")
