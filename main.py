@@ -1,5 +1,5 @@
-def main():
-    print("AI PDF to DXF Converter v0.2")
+from src.pipeline import run_pipeline
 
 if __name__ == "__main__":
-    main()
+
+    run_pipeline("examples/test.pdf")
