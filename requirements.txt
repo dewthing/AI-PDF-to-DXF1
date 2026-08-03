@@ -1,0 +1,15 @@
+opencv-python
+numpy
+matplotlib
+easyocr
+paddleocr
+ultralytics
+ezdxf
+shapely
+scikit-image
+scipy
+torch
+torchvision
+pillow
+pdf2image
+pymupdf
